@@ -13,3 +13,10 @@ body {
 .logo-header {
     width: 18rem;
 }
+
+.hero-section-main{
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
