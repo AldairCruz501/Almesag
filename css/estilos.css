@@ -1,0 +1,15 @@
+body {
+    font-family: "Urbanist", sans-serif !important;
+}
+
+.contact-top {
+    background-color: #513a7c;
+}
+
+.nav-link:hover {
+    color: #f4b942 !important;
+}
+
+.logo-header {
+    width: 18rem;
+}
