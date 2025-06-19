@@ -2,6 +2,7 @@ body {
     font-family: "Urbanist", sans-serif !important;
 }
 
+  /* NavBar */
 .contact-top {
     background-color: #513a7c;
 }
@@ -14,9 +15,51 @@ body {
     width: 18rem;
 }
 
+/* Hero Section Main */
 .hero-section-main{
     background-image: url(/img/banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
+
+/* Hero Section About*/
+.about-section {
+    background-color: #372b4f;
+}
+
+.value-plus {
+    background-color: #5a5a5a;
+}
+
+.value-minus {
+    background-color: #f4b942;
+}
+
+.hero-section-about{
+    background: url(/img/experiencia.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.counter-section {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+.counter-box {
+    position: relative;
+    padding: 1rem;
+    color: #3d348b;
+}
+.border-left {
+    border-left: 2px solid #f4b942 !important;
+}
+.counter-label {
+    font-size: 0.9rem;
+    color: #5c5c5c;
 }
