@@ -75,59 +75,63 @@
     </div>
     <div class="p-5 bg-white container-fluid">
       <div class="container pt-5 pb-5">
-        <div class="row g-5">
+        <div class="row g-5 accordion" id="accordionValores">
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="value-plus border rounded-4">
-              <div class="m-3 text-white d-flex">
-                <h5 class="fs-2">Integridad</h5>
-                <i class="bi bi-plus ps-4 ms-5 fs-3"></i>
+            <div class="accordion-item value-plus border rounded-4 text-white">
+              <h2 class="accordion-header">
+                <button class="accordion-button value-plus collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valor1" aria-expanded="true" aria-controls="valor1">
+                  <span class="fs-2 text-white">Integridad</span>
+
+                </button>
+              </h2>
+              <div id="valor1" class="accordion-collapse collapse" data-bs-parent="#accordionValores">
+                <div class="accordion-body fs-5">
+                  Actuamos con honestidad, respeto y ética en todas nuestras acciones.
+                </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="value-minus border rounded-4 h-100">
-              <div class="m-3 d-flex">
-                <h5 class="fs-2 mb-2">Innovación</h5>
-                <i class="bi bi-dash ps-4 ms-5 fs-3"></i>
+            <div class="accordion-item value-minus border rounded-4">
+              <h2 class="accordion-header">
+                <button class="accordion-button value-minus collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valor2" aria-expanded="false" aria-controls="valor2">
+                  <span class="fs-2">Innovación</span>
+                </button>
+              </h2>
+              <div id="valor2" class="accordion-collapse collapse show" data-bs-parent="#accordionValores">
+                <div class="accordion-body fs-5">
+                  Transformamos el conocimiento y las ideas en valor agregado para nuestros clientes y para la empresa.
+                </div>
               </div>
-              <div class="m-3">
-                <p class="fs-5">
-                  Transformamos el conocimiento y las ideas
-                  en valor agregado para nuestros clientes y para la
-                  empresa
-                </p>
-              </div>
-            </div>        
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="value-minus border rounded-4 h-100">
-              <div class="m-3 d-flex">
-                <h5 class="fs-2 mb-2">Confiabilidad</h5>
-                <i class="bi bi-dash ps-3 ms-3 fs-3"></i>
+            <div class="accordion-item value-minus border rounded-4">
+              <h2 class="accordion-header">
+                <button class="accordion-button value-minus collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valor3" aria-expanded="false" aria-controls="valor3">
+                  <span class="fs-2">Confiabilidad</span>
+                </button>
+              </h2>
+              <div id="valor3" class="accordion-collapse collapse show" data-bs-parent="#accordionValores">
+                <div class="accordion-body fs-5">
+                  Construimos relaciones basadas en el respaldo y seguridad a nuestros clientes, a nuestro personal y a toda la sociedad.
+                </div>
               </div>
-              <div class="m-3">
-                <p class="fs-5">
-                  Construimos relaciones basadas en el respaldo y
-                  seguridad a nuestros clientes, a nuestro personal
-                  y a toda la sociedad
-                </p>
-              </div>
-            </div>              
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="value-minus border rounded-4 h-100">
-              <div class="m-3 d-flex">
-                <h5 class="fs-2 mb-2">Servicio</h5>
-                <i class="bi bi-dash ps-5 ms-5 fs-3"></i>
+            <div class="accordion-item value-minus border rounded-4">
+              <h2 class="accordion-header">
+                <button class="accordion-button value-minus collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#valor4" aria-expanded="false" aria-controls="valor4">
+                  <span class="fs-2">Servicio</span>
+                </button>
+              </h2>
+              <div id="valor4" class="accordion-collapse collapse show" data-bs-parent="#accordionValores">
+                <div class="accordion-body fs-5">
+                  Brindamos a nuestros clientes total apoyo y compromiso en la consecución de sus objetivos.
+                </div>
               </div>
-              <div class="m-3">
-                <p class="fs-5">
-                  Brindamos a nuestros clientes total apoyo,
-                  compromiso en la consecución de sus
-                  objetivosa
-                </p>
-              </div>
-            </div>              
+            </div>
           </div>
         </div>
       </div>
@@ -145,8 +149,7 @@
                   Laborando en el desarrollo de telecomunicaciones
                 </p>
                 <p class="fs-2 mb-2">
-                  Capacitados en la
-                  planificación y ejecución
+                  Capacitados en la planificación y ejecución
                   de proyectos
                 </p>
               </div>

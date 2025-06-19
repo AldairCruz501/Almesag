@@ -29,11 +29,11 @@ body {
 }
 
 .value-plus {
-    background-color: #5a5a5a;
+    background-color: #5a5a5a !important;
 }
 
 .value-minus {
-    background-color: #f4b942;
+    background-color: #f4b942 !important;
 }
 
 .hero-section-about{
