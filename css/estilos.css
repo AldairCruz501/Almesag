@@ -103,9 +103,9 @@ body {
   .hero-section-main-responsive {
     height: 50vh;
   }
-  /* .hero-section-about-responsive {
+  .hero-section-about-responsive {
     height: 50vh;
-  }   */
+  }  
   .logo-header {
     width: 12rem;
 }
