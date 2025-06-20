@@ -84,7 +84,7 @@ body {
 .counter-section {
     padding: 3rem 1rem;
     background-color: #fff;
-    text-align: center;
+    text-align: left;
 }
 .counter-box {
     position: relative;
