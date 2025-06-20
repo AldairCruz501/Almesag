@@ -23,10 +23,24 @@ body {
     height: 100vh;
 }
 
+.hero-section-main-responsive {
+  background-image: url(/img/banner-telefono.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
 /* Hero Section About*/
 .about-section {
     background-color: #372b4f;
 }
+
+.about-section {
+    background-color: #372b4f;
+}
+
 
 .value-plus {
     background-color: #5a5a5a !important;
@@ -34,6 +48,17 @@ body {
 
 .value-minus {
     background-color: #f4b942 !important;
+}
+
+/* Colores del botón acordeón */
+.accordion-button.btn-plus {
+  background-color: #5a5a5a !important;
+  color: #FFFFFF !important;
+}
+
+.accordion-button.btn-minus {
+  background-color: #f4b942 !important;
+  color: #FFFFFF!important;
 }
 
 .hero-section-about{
@@ -44,6 +69,16 @@ body {
     height: 70vh;
     display: flex;
     align-items: center;
+}
+
+
+.hero-section-about-responsive{
+    background: url(/img/experiencia-telefono.png) no-repeat center center;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     height: 100vh;
+     position: relative;
 }
 
 .counter-section {
@@ -62,4 +97,16 @@ body {
 .counter-label {
     font-size: 0.9rem;
     color: #5c5c5c;
+}
+
+@media (max-width: 576px) {
+  .hero-section-main-responsive {
+    height: 50vh;
+  }
+  /* .hero-section-about-responsive {
+    height: 50vh;
+  }   */
+  .logo-header {
+    width: 12rem;
+}
 }
