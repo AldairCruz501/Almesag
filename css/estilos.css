@@ -165,10 +165,19 @@ body {
     font-size: 2rem;
 }
 
+
+.sector-title-telecom {
+    padding-top: 15rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
 /* Services Section */
 .services-section {
     background-color: #FFFFFF;
-    color: #513a7c;
+    color: #513a7c !important;
     padding: 0px !important;
 }
 
@@ -177,9 +186,26 @@ body {
     height: 50vh;
   }
   .hero-section-about-responsive {
-    height: 50vh;
+    height: 90vh;
   }  
+  .hero-section-values-responsive {
+    height: 120vh;
+  }
   .logo-header {
     width: 12rem;
 }
+.sector-title {
+    padding-top: 10rem;
+}
+
+.sector-title-telecom {
+    padding-top: 7rem;
+}
+
+}
+
+@media (max-width: 320px) {
+      .hero-section-values-responsive {
+    height: 150vh;
+  }
 }
