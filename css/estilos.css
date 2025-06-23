@@ -89,7 +89,7 @@ body {
     color: #3d348b;
 }
 .border-left {
-    border-left: 2px solid #f4b942 !important;
+    border-left: 4px solid #f4b942 !important;
 }
 .counter-label {
     font-size: 0.9rem;
@@ -342,11 +342,11 @@ body {
     width: 12rem;
 }
 .sector-title {
-    padding-top: 23rem;
+    padding-top: 15rem;
 }
 
 .sector-title-telecom {
-    padding-top: 23rem;
+    padding-top: 15rem;
 }
 
 .slide-brand {
@@ -361,4 +361,12 @@ body {
       .hero-section-values-responsive {
     height: 150vh;
   }
+  .sector-title {
+    padding-top: 19rem;
+}
+
+.sector-title-telecom {
+    padding-top: 19rem;
+}
+
 }
