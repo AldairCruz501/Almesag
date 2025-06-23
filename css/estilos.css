@@ -3,7 +3,8 @@ body {
 }
 
   /* NavBar */
-.contact-top {
+.contact-top,
+.section-sectors {
     background-color: #513a7c;
 }
 
@@ -33,14 +34,10 @@ body {
 }
 
 /* Hero Section About*/
-.about-section {
+.about-section,
+.services-points {
     background-color: #372b4f;
 }
-
-.about-section {
-    background-color: #372b4f;
-}
-
 
 .value-plus {
     background-color: #5a5a5a !important;
@@ -97,6 +94,82 @@ body {
 .counter-label {
     font-size: 0.9rem;
     color: #5c5c5c;
+}
+
+.hero-section-values{
+    background: url(/img/mision-vision.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-section-values-responsive{
+    background: url(/img/mision-vision-telefono.png) no-repeat center center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sector-card {
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sector-card:hover {
+    transform: scale(1.05);
+}
+
+.sector-card-telecom {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sector-card-telecom:hover {
+    transform: scale(1.05);
+}
+
+.sector-title {
+    padding-top: 25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #FFFFFF;
+    color: #513a7c;
+    padding: 0px !important;
 }
 
 @media (max-width: 576px) {
