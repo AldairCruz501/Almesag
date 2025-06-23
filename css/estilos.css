@@ -181,6 +181,153 @@ body {
     padding: 0px !important;
 }
 
+    .nav-tabs .nav-link {
+      background-color: #555;
+      color: white;
+      margin-right: 10px;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+    }
+
+    .nav-tabs .nav-link.active {
+      background-color: #FFB703 !important;
+      color: #000 !important;
+    }
+
+    .tab-content {
+      margin-top: 30px;
+    }
+
+    .rounded-image {
+      border-radius: 20px;
+    }
+
+    .contenido-proyecto {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: start !important;
+      gap: 30px;
+    }
+
+    .contenido-texto {
+      flex: 1 1 300px;
+    }
+
+    .contenido-imagen-fondo {
+        flex: 1 1 300px;
+        height: 70vh;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .fondo-slide {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+    }
+
+    /* Indicadores visibles sobre fondo oscuro */
+    .carousel-indicators [data-bs-target] {
+        background-color: #fff;
+    }
+
+    .line {
+      border-top: 2px solid #FFFFFF !important;
+      width: 80%;
+    }
+
+    /* Animación */
+    .fade-custom {
+      animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+     .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      background: #fff;
+      padding: 20px 0;
+    }
+
+    .slider::before,
+    .slider::after {
+      content: "";
+      position: absolute;
+      width: 15%;
+      height: 100%;
+      z-index: 2;
+      background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+    }
+
+    .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+
+    .slider::before {
+      left: 0;
+      top: 0;
+    }
+
+    .slide-track {
+      display: flex;
+      animation: scroll 40s linear infinite;
+      width: max-content;
+    }
+
+    .slide-brand {
+      flex: 0 0 auto;
+      width: 180px; /* Tamaño fijo */
+      height: 120px; /* Tamaño fijo */
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #f8f9fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      border-radius: 8px;
+    }
+
+    .slide-brand img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .slide-brand {
+        width: 140px;
+        height: 100px;
+        margin: 0 6px;
+      }
+    }
+
+
 @media (max-width: 576px) {
   .hero-section-main-responsive {
     height: 50vh;
@@ -195,11 +342,17 @@ body {
     width: 12rem;
 }
 .sector-title {
-    padding-top: 10rem;
+    padding-top: 23rem;
 }
 
 .sector-title-telecom {
-    padding-top: 7rem;
+    padding-top: 23rem;
+}
+
+.slide-brand {
+    width: 100px;
+    height: 80px;
+    margin: 0 4px;
 }
 
 }

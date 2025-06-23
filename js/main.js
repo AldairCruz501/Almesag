@@ -33,4 +33,17 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-                
+  // Añadir animación personalizada al cambiar pestaña
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  document.querySelectorAll('button[data-bs-toggle="tab"]').forEach(button => {
+    button.addEventListener('shown.bs.tab', function (e) {
+      tabPanes.forEach(pane => pane.classList.remove('fade-custom'));
+      const targetId = e.target.getAttribute('data-bs-target');
+      const targetPane = document.querySelector(targetId);
+      if (targetPane) {
+        targetPane.classList.add('fade-custom');
+      }
+    });
+  });
+
