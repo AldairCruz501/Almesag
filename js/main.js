@@ -1,5 +1,5 @@
 
-/* */
+/*Cambio de tamaño en el navbar */
 window.addEventListener('scroll', function () {
   const header = document.querySelector('header');
   if (window.scrollY > 100) {
@@ -41,22 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
       activarItemCerrado();
     }
   });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const scrollingText = document.getElementById('scrollingText');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        scrollingText.classList.add('animate-scroll');
-      } else {
-        scrollingText.classList.remove('animate-scroll'); // Opcional: detener animación al salir
-      }
-    });
-  });
-
-  observer.observe(scrollingText);
 });
 
   // Añadir animación personalizada al cambiar pestaña
