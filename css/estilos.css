@@ -1,9 +1,14 @@
 body {
     font-family: "Urbanist", sans-serif !important;
 }
-
   /* NavBar */
-.contact-top,
+
+  .contact-top {
+    background-color: #513a7c;
+    transition: top 0.3s ease, opacity 0.3s ease;
+    z-index: 1050;
+  }
+
 .section-sectors {
     background-color: #513a7c;
 }
@@ -12,8 +17,26 @@ body {
     color: #f4b942 !important;
 }
 
+.header-scrolled .logo-header {
+  width: 10rem !important;
+  transition: width 0.3s ease;
+}
+
+/* Tamaño normal del logo */
 .logo-header {
-    width: 18rem;
+  width: 18rem;
+  transition: width 0.3s ease;
+}
+
+/* Menú más pequeño al hacer scroll */
+.header-scrolled .nav-link {
+  font-size: 1rem !important;
+  transition: font-size 0.3s ease;
+}
+
+/* Tamaño normal del texto del nav */
+.nav-link {
+  transition: font-size 0.3s ease;
 }
 
 /* Hero Section Main */
@@ -173,6 +196,24 @@ body {
     font-size: 2rem;
 }
 
+.scrolling-text {
+  display: inline-flex;
+  white-space: nowrap;
+  transform: translateX(0);
+}
+
+.animate-scroll {
+  animation: scroll-left 15s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-60%);
+  }
+}
 
 /* Services Section */
 .services-section,

@@ -1,5 +1,15 @@
 
 /* */
+window.addEventListener('scroll', function () {
+  const header = document.querySelector('header');
+  if (window.scrollY > 100) {
+    header.classList.add('header-scrolled');
+  } else {
+    header.classList.remove('header-scrolled');
+  }
+});
+
+/* Cambio de color en boton desplegable */
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.accordion-item');
 
@@ -33,6 +43,22 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const scrollingText = document.getElementById('scrollingText');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        scrollingText.classList.add('animate-scroll');
+      } else {
+        scrollingText.classList.remove('animate-scroll'); // Opcional: detener animación al salir
+      }
+    });
+  });
+
+  observer.observe(scrollingText);
+});
+
   // Añadir animación personalizada al cambiar pestaña
   const tabPanes = document.querySelectorAll('.tab-pane');
 
@@ -46,4 +72,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
 
