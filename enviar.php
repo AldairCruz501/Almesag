@@ -1,21 +1,24 @@
 <?php
-if ($_POST['g-recaptcha-response'] == null || !isset($_POST['g-recaptcha-response']) || $_POST['g-recaptcha-response'] == '') {
+if($_POST['g-recaptcha-response'] == null || !isset($_POST['g-recaptcha-response']) || $_POST['g-recaptcha-response'] == ''){
     echo "<script>alert('Complete el reCAPTCHA para continuar')</script>";
     echo "<script>window.location.replace('index.html#contacto');</script>";
     return;
-} elseif (isset($_POST['nombre']) && isset($_POST['apellidos']) && isset($_POST['telefono']) && isset($_POST['servicio']) && isset($_POST['fecha_estancia']) && isset($_POST['contacto'])) {
+}elseif(isset($_POST['correo']) && isset($_POST['nombre']) && isset($_POST['telefono']) && isset($_POST['mensaje']) && isset($_POST['asunto'])){
+    $correo= trim($_POST['correo']);
     $nombre = trim($_POST['nombre']);
-    $apellidos = trim($_POST['apellidos']);
     $telefono = trim($_POST['telefono']);
-    $servicio = trim($_POST['servicio']);
-    $fecha_estancia = trim($_POST['fecha_estancia']);
-    $contacto = trim($_POST['contacto']);
+    $mensaje = trim($_POST['mensaje']);
+    $asunto = trim($_POST['asunto']);
 
-    $message = "Nombre: $nombre $apellidos\nTeléfono: $telefono\nServicio: $servicio\nFecha de estancia: $fecha_estancia\nPreferencia de contacto: $contacto";
+    $message = "Nombre: " . $nombre .  "\n Correo: " . $correo .  "\n Telefono de contacto: " . $telefono  .  "\n Asunto: " . $asunto  .  "\n Mensaje: " . $mensaje;
+
 
     $response = $_POST['g-recaptcha-response'];
-    $secret = '6Lf-SNoqAAAAAKhbtsA3r8N2J0eGjCHOFiBHqjqO';
+    $secret = '6LeDwKAqAAAAAAdLqQGd5UF8aef8UCC_Dvf4xmmA';
     $url = "https://www.google.com/recaptcha/api/siteverify";
+
+    
+
 
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $url);
@@ -35,8 +38,8 @@ if ($_POST['g-recaptcha-response'] == null || !isset($_POST['g-recaptcha-respons
     $result = json_decode($result);
 
     if($result->success){
-        $to = 'acruz.pbxhosting@gmail.com, jballadares.pbxhosting@gmail.com';
-        // $to = 'contacto@casadelriozimatan.com.mx, reservaciones@casadelriozimatan.com.mx';
+        //$to = 'vricardez.pbxhosting@gmail.com';
+        $to = 'ventas@almesag.com.mx';
         $subject = 'Formulario de contacto';
 
 
@@ -51,9 +54,11 @@ if ($_POST['g-recaptcha-response'] == null || !isset($_POST['g-recaptcha-respons
             return;
         }
     }
+
 }else{
     echo "<script>alert('Llene todos los campos obligatorios del formulario para continuar')</script>";
     echo "<script>window.location.replace('index.html#contacto');</script>";
     return;
 }
+
 ?>
